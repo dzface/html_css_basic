@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      color:#000;
+    }
+    /* 태그선택자 */
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: royalblue;
+      color: white;
+
+    }
+    .accent{
+      border: 1px solid #000;
+      padding: 5px;
+    }
+    bg { 
+      background-color: #aa2323;
+    }
+    /* 아이디 선택자(#) */
+    #container{
+      width: 500px;
+      height: auto;
+      margin: 10px auto;
+      padding: 10px;
+      border:1px solid #000
+    }
+    a[target=_blank]{
+      color: red;
+    }
+    /* 그룹 선택자: 여러 선택자를 하나로 그룹지울 때 사용 */
+    p, h1{
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">곰돌이사육사
+  <p>오늘은 금요일 입니다.</p>
+  <h1 class="accent, bg">레드향</h1>
+  <p>껍질이 붉은 빛이 돌아 <span class="accent bg">레드향</span>이라 불린다.</p>
+  <a href="http://naver.com" target="_blank">네이버</a>
+  <hr>
+  <a href="http://google.co.kr">구글</a>
+</div>
+<a href="https://kakao.co.kr">카카오</a>
+</body>
+</html>

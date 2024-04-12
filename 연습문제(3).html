@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    body{
+      margin: 0;
+    }
+    .container{
+      width: 800px;
+      margin: 0 auto;
+    }
     label{
       width: 80px;
       display: inline-block;
@@ -13,12 +20,17 @@
     input {
       width: 300px;
     }
+    /* date 속성만 모양 적용 */
+    input[type="date"] {
+        width: 150px;
+      }
     span{
       font-size: 80%;
     }
     div{
       margin: 10px ;
       align-items: center;
+      line-height: 200%;
     }
     button {
       width: 150px;
