@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  .movie {
+    background-color: antiquewhite;
+    font-size: 24px;
+  }
+  .tv {
+    background-color: brown;
+  }</style>
+  
+</head>
+<body>
+  <!-- br은 공백을 넣어도 적용되지 않고, 글자는 여러줄 띄어쓰기가 적용되지 않음 margin과 pedding 사용해야 함 -->
+  <p>
+
+    줄을 나누고 싶어서<br/>
+    이렇게 줄을 나눠봤습니다.<br/>
+    
+    <br/>
+    과연     그대로     출력이     될까요?
+    </p>
+  <div>
+    HTML 요소들을 하나로 묶어 주는데 자주사용하는 대표적인 Block 요소
+  </div>
+<!-- HTML의 모든 요소는 해당 요소가 웹브라우저에 어떻게 보이는가를 결정짓는 display속성을 가짐 -->
+<!-- 대표적인 속성은 BLOCK과 inline이 있음 -->
+<!-- 블록 타입의 요소 : p, div, h1~h6,ul,ol,form -->
+<p>영화소개</p>
+<p>영화를 소개하는 페이지 입니다.</p>
+<p>TV 프로그램 소개 </p>
+<P>TV 프로그램 소개하는 페이지 입니다.</P>
+
+<div class="movie">
+  <p>영화소개</p>
+  <p>영화를 소개하는 페이지 입니다.</p>
+</div>
+<div class="TV">
+  <p>TV 프로그램 소개</p>
+  <p>TV 프로그램을 소개하는 페이지 입니다.</p>
+</div>
+<!-- inline 타입요소: 컨텐츠 영역만 차지 -->
+<!-- span,a, img, string, em, input, button -->
+<p style="background-color: aqua;">
+  <span style="color: gray; background-color: crimson;">span 태그</span>
+  는 display 속성값이 inline 요소입니다.
+</p>
+<!-- span 태그는 글자영역에서만 가운데 정렬처리해도 정렬이 되지 않음 -->
+<span style="text-align: center;">글자를 중간 정렬 하겠습니다.</span>
+<!-- 수평 분활 -->
+<hr>
+</body>
+</html>

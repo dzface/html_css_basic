@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table{
+      /* collapse 박스간 외곽선을 하나로 합쳐줌 */
+      border-collapse: collapse;  
+    }
+    th, td {
+      /* solid: 실선(선종류) */
+      /* padding: 내부 여백 */
+      width: 30%;
+      border: 1px solid #ccc;
+      padding:5px;
+    }
+    th {
+      background-color: bisque;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 표(table)은 행과 열로 이루어져 있음 tr(table rol)-->
+  <table>
+    <caption>표제목</caption>
+    <tr>
+      <th>여기는 제목입니다.</th>
+      
+    </tr>
+    <tr>
+      <td>여기는 내용입니다. </td>
+    </tr>
+  </table>
+  <table>
+    
+    <thead><tr>
+      <th>번호</th>
+      <th>상품명</th>
+      <th>수량</th>
+      <th>가격</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1500원</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>1개</td>
+        <!-- 행 병합 -->
+        <td rowspan="2">1300원</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>탄산수</td>
+        <td>1개</td>
+        <!-- <td>1300원</td> -->
+      </tr>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>총 금액</td>
+        <!-- 열병합 -->
+        <td colspan="3">6,500원</td>
+      </tr>
+    </tfoot>
+    </table>
+    
+    
+</body>
+</html>

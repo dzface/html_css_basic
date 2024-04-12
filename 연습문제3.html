@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      text-align: center;
+      font-size: 15px;
+    }
+    td, th {
+      border: 1px solid #ccc;
+      padding: 10px 10px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+    <caption>학생성적표</caption>
+    <colgroup>
+    <col style="width: 150px; background-color: rgb(190, 190, 190);">
+    <col style="width: 150px;">
+    <col style="width: 150px;">
+    <col style="width: 150px;">
+    </colgroup>
+    </thead>
+    <tbody>
+      <tr style="background-color: bisque;">
+        <th>이름</th>
+        <th>국어</th>
+        <th>영어</th>
+        <th>수학</th>
+      </tr>
+      <tr>
+        <td>문동은</td>
+        <td>55</td>
+        <td>67</td>
+        <td>99</td>
+      </tr>
+      <tr>
+        <td>주여정</td>
+        <td>67</td>
+        <td>87</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>박여진</td>
+        <td>88</td>
+        <td>99</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>전재준</td>
+        <td>67</td>
+        <td>55</td>
+        <td>44</td>
+      </tr>
+      <tr>
+        <td>하도영</td>
+        <td>55</td>
+        <td>67</td>
+        <td>88</td>
+      </tr>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>과목평균</td>
+        <td>55</td>
+        <td>67</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>전체평균</td>
+        <td colspan="3">67</td>
+        <!-- <td>55</td>
+        <td>44</td> -->
+      </tr>
+
+    </tfoot>
+  </table>
+</body>
+</html>
