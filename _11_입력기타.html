@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<body>
+  <!-- button 태그 -->
+  <input type="submit" name="" id="" value="등록">
+  <input type="reset" name="" id="" value="취소">
+  <button type="submit">
+    <img src="/images/facebook.png" alt="페이스북">페이스북에 등록하기
+  </button>
+  <p>입력불가 창</p>
+  <input type="text" disabled>
+  <button type="button" disabled>비활성</button>
+  <p>읽기만 가능한 창</p>
+  <input type="text" readonly>
+  <textarea readonly></textarea>
+  <p>글자수 4개제한</p>
+  <input type="url" maxlength="4">
+  <textarea maxlength="4"></textarea>
+  <p>요소가 선택된 상태 체크박스</p>
+  <form action="#">
+    <fieldset>
+      <legend>좋아하는 과일</legend>
+      <input type="checkbox" id="banana" name="banana" value="banana">
+      <label for="banana">banana</label><br>
+      <input type="checkbox" id="apple" name="apple" value="apple">
+      <label for="apple">apple</label><br>
+      <input type="checkbox" id="orange" name="orange" value="orange"  checked>
+      <label for="orange">orange</label><br>
+    </fieldset>
+  </form>
+  <p>입력 누락시 오류 </p>
+  <input type="tel" placeholder="반드시입력" required>
+</body>
+</html>

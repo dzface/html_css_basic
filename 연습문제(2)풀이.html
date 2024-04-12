@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      width:520px ;
+      border: 1px solid black;
+      padding: 20px 40px;
+      /* auto 좌우 가운데 정렬 */
+      margin:0 auto;
+    }
+    .detail{
+      margin: 4px 40px;
+    }
+    label {
+      width: 60px;
+      /* float: left; */
+      display:inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>프론트앤드 개발자 지원서</h1>
+    <p>HTML, CSS, JAVASCRIPT에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+    <hr>
+    <form action="#">
+      <h4>개인정보</h4>
+      <div class="detail">
+        <label for="name">이름</label>
+        <input type="text"  id="name" placeholder="공백없이 연락하세요.">
+      </div>
+      <div class="detail">
+        <label for="phone">연락처</label>
+        <input type="text" id="phone">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
