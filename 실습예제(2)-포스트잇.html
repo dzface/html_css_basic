@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+.container{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.memo-box{
+  width: 600px;
+  height: 500px;
+  padding: 18px;
+  text-align: center;
+  background-color: #ffff99; 
+  transform: translate(0px,20px) rotate(20deg);
+  margin: 100px;
+}
+p{
+  font-family: "nanum pen", cursive;
+  font-size: 25px;
+}
+.fold1{
+  width: 100px;
+  height: 100px;
+  top: 25px;
+  left: 560px;
+  background-color: #ffffd4;
+  transform: translate(550px,20px) rotate(40deg);
+}
+.fold2{
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  transform: translate(550px,-80px) rotate(65deg);
+}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+</style>
+<body>
+  <div class="container">
+    <div class="memo-box">
+      <p style="font-size: 44px;">To. 남편</p>
+      <p>여보~ 오늘 급하게 먼저 출근해야 해서</p>
+      <p>인사도 못하고 먼저 나가요~</p>
+      <p>아침 굶지 말고 냉장고에 있는 반찬</p>
+      <p>전자레인지에 데워서 챙겨 먹고 나가요~!</p>
+      <p>그럼 오늘 하루도 힘내고 이따 저녁에 봐요~</p>
+      <p>화이팅~!</p>
+      <div class="fold1"></div>
+      <div class="fold2"></div>
+
+    </div>
+    
+  </div>
+</body>
+</html>
